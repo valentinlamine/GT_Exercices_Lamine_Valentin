@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--Réalise un formulaire de démo en web-->
+    <form action="/" method="POST">
+        <div class="input">
+            <input type="text" name="input" placeholder="This is an input">
+        </div>
+        <div class="select">
+            <select name="select" id="select">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+        </div>
+        <div class="textarea">
+            <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
+        </div>
+        <div class="radio">
+            <input type="radio" name="radio" id="radio1" value="1">
+            <label for="radio1">Radio 1</label>
+            <input type="radio" name="radio" id="radio2" value="2">
+            <label for="radio2">Radio 2</label>
+            <input type="radio" name="radio" id="radio3" value="3">
+            <label for="radio3">Radio 3</label>
+        </div>
+        <div class="checkbox">
+            <input type="checkbox" name="checkbox" id="checkbox1" value="1">
+            <label for="checkbox1">Checkbox 1</label>
+            <input type="checkbox" name="checkbox" id="checkbox2" value="2">
+            <label for="checkbox2">Checkbox 2</label>
+            <input type="checkbox" name="checkbox" id="checkbox3" value="3">
+            <label for="checkbox3">Checkbox 3</label>
+        </div>
+        <input type="submit" value="Submit">
+    </form>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 98vh;
+            background-color: #1E1E1E;
+            color: white;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            height: 50%;
+            border: 1px solid white;
+            padding: 20px;
+        }
+        input, textarea, select {
+            margin: 10px;
+            padding: 5px 10px;
+            border: 1px solid white;
+            border-radius: 5px;
+            background-color: #ffffff;
+            font-size: 18px;
+        }
+    </style>
+</body>
+</html>

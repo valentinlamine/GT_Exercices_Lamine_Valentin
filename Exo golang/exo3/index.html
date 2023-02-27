@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+    {{range .}}
+        <tr>
+            {{range .}}
+                <td>{{.}}</td>
+            {{end}}
+        </tr>
+    {{end}}
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 95vh;
+        }
+        td {
+            border-collapse: collapse;
+            border: 1px solid black;
+            padding: 15px;
+            font-size: 20px;
+            text-align: center;
+        }
+    </style>
+</table>
+</body>
+</html>
